@@ -1,0 +1,136 @@
+body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo > img{
+    height: 4rem;
+    width: 4rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: space-between;
+}
+.header:first-child{
+    margin: 8px;
+}
+
+.nav{
+    grid-column: 9 / 13;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.home{
+    grid-column: 9 / 10;
+}
+
+.menu{
+    grid-column: 10 / 11;
+}
+
+.whatsnew{
+    grid-column: 11 / 12;
+}
+
+.slogan{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 60%;
+    position: absolute;
+    top: 20%;
+}
+.slogan > #sl{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.itsnot{
+    grid-column: 2 / span2;
+    grid-row: 3;
+}
+.coffee{
+    grid-column: 2 / span2;
+    grid-row: 4;
+}
+
+.its{
+    grid-column: 2 / span2;
+    grid-row: 5;
+}
+.brand_name{
+    font-weight: bold;
+    color: #006241;
+}
+.details{
+    grid-row: 6;
+    grid-column: 2 / span3;
+}
+.button{
+    grid-column: 2 / span2;
+    grid-row: 7;
+    background-color: #006241;
+    color: white;
+    width: 6rem;
+    text-align: center;
+    padding: 6px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.circle{
+    background-color: #006241;
+    height: 70rem;
+    width: 70rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -41%;
+    top: 28%;
+}
+.brand-image{
+    height: 34rem;
+    width: auto;
+    position: absolute;
+    right: 3%;
+    top: 13%;
+}
+.icon1{
+    height: 8rem;
+    width: auto;
+    position: absolute;
+    left: 35%;
+    bottom: 2%;
+    transition: bottom 0.5s;
+}
+.icon2{
+    height: 8rem;
+    width: auto;
+    position: absolute;
+    left: 56%;
+    bottom: 2%;
+    transition: bottom 0.5s;
+}
+.icon3{
+    height: 8rem;
+    width: auto;
+    position: absolute;
+    left: 45%;
+    bottom: 2%;
+    transition: bottom 0.5s;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover{
+    cursor: pointer;
+    bottom: 4%;
+}
